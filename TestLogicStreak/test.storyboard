@@ -1,0 +1,143 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<document type="com.apple.InterfaceBuilder3.CocoaTouch.Storyboard.XIB" version="3.0" toolsVersion="13771" targetRuntime="iOS.CocoaTouch" propertyAccessControl="none" useAutolayout="YES" useTraitCollections="YES" useSafeAreas="YES" colorMatched="YES" initialViewController="mwc-X4-VgC">
+    <device id="retina4_7" orientation="portrait">
+        <adaptation id="fullscreen"/>
+    </device>
+    <dependencies>
+        <deployment identifier="iOS"/>
+        <plugIn identifier="com.apple.InterfaceBuilder.IBCocoaTouchPlugin" version="13772"/>
+        <capability name="Safe area layout guides" minToolsVersion="9.0"/>
+        <capability name="documents saved in the Xcode 8 format" minToolsVersion="8.0"/>
+    </dependencies>
+    <scenes>
+        <!--Test View Controller-->
+        <scene sceneID="RCN-ph-Aqi">
+            <objects>
+                <viewController id="mwc-X4-VgC" customClass="TestViewController" customModule="TestLogicStreak" customModuleProvider="target" sceneMemberID="viewController">
+                    <view key="view" contentMode="scaleToFill" id="nWA-Hd-PuA">
+                        <rect key="frame" x="0.0" y="0.0" width="375" height="667"/>
+                        <autoresizingMask key="autoresizingMask" widthSizable="YES" heightSizable="YES"/>
+                        <subviews>
+                            <button opaque="NO" contentMode="scaleToFill" contentHorizontalAlignment="center" contentVerticalAlignment="center" buttonType="roundedRect" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="nUQ-x2-Ief">
+                                <rect key="frame" x="153" y="577" width="68" height="30"/>
+                                <state key="normal" title="Plus Point"/>
+                                <connections>
+                                    <action selector="plusPointButtonTapped:" destination="mwc-X4-VgC" eventType="touchUpInside" id="AHz-Ri-x26"/>
+                                </connections>
+                            </button>
+                            <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" text="Streak" textAlignment="natural" lineBreakMode="tailTruncation" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="2ga-9a-OIT">
+                                <rect key="frame" x="162.5" y="86" width="50" height="21"/>
+                                <fontDescription key="fontDescription" type="system" pointSize="17"/>
+                                <nil key="textColor"/>
+                                <nil key="highlightedColor"/>
+                            </label>
+                            <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" text="Point" textAlignment="natural" lineBreakMode="tailTruncation" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="Sod-RS-BfH">
+                                <rect key="frame" x="168" y="245" width="39" height="21"/>
+                                <fontDescription key="fontDescription" type="system" pointSize="17"/>
+                                <nil key="textColor"/>
+                                <nil key="highlightedColor"/>
+                            </label>
+                            <textField opaque="NO" contentMode="scaleToFill" contentHorizontalAlignment="left" contentVerticalAlignment="center" borderStyle="line" textAlignment="natural" minimumFontSize="17" translatesAutoresizingMaskIntoConstraints="NO" id="FMj-NC-RqU">
+                                <rect key="frame" x="134" y="324" width="233" height="21"/>
+                                <nil key="textColor"/>
+                                <fontDescription key="fontDescription" type="system" pointSize="14"/>
+                                <textInputTraits key="textInputTraits"/>
+                                <connections>
+                                    <action selector="lastDateBeginEndEdit:" destination="mwc-X4-VgC" eventType="editingDidBegin" id="G2i-oC-ibI"/>
+                                </connections>
+                            </textField>
+                            <textField opaque="NO" contentMode="scaleToFill" contentHorizontalAlignment="left" contentVerticalAlignment="center" borderStyle="line" textAlignment="natural" minimumFontSize="17" translatesAutoresizingMaskIntoConstraints="NO" id="2TM-gU-Jef">
+                                <rect key="frame" x="134" y="362" width="233" height="21"/>
+                                <nil key="textColor"/>
+                                <fontDescription key="fontDescription" type="system" pointSize="14"/>
+                                <textInputTraits key="textInputTraits"/>
+                                <connections>
+                                    <action selector="currentDateBeginEndEdit:" destination="mwc-X4-VgC" eventType="editingDidBegin" id="n6m-Kl-UUk"/>
+                                </connections>
+                            </textField>
+                            <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" text="Last Date" textAlignment="natural" lineBreakMode="tailTruncation" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="slx-fY-dC4">
+                                <rect key="frame" x="16" y="323" width="73" height="21"/>
+                                <fontDescription key="fontDescription" type="system" pointSize="17"/>
+                                <nil key="textColor"/>
+                                <nil key="highlightedColor"/>
+                            </label>
+                            <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" text="Current Date" textAlignment="natural" lineBreakMode="tailTruncation" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="OMK-yS-0Mg">
+                                <rect key="frame" x="8" y="361" width="99" height="21"/>
+                                <fontDescription key="fontDescription" type="system" pointSize="17"/>
+                                <nil key="textColor"/>
+                                <nil key="highlightedColor"/>
+                            </label>
+                            <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" text="Choose Next Day" textAlignment="natural" lineBreakMode="tailTruncation" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="1MS-8N-R9f">
+                                <rect key="frame" x="8" y="412" width="133" height="21"/>
+                                <fontDescription key="fontDescription" type="system" pointSize="17"/>
+                                <nil key="textColor"/>
+                                <nil key="highlightedColor"/>
+                            </label>
+                            <textField opaque="NO" contentMode="scaleToFill" contentHorizontalAlignment="left" contentVerticalAlignment="center" borderStyle="bezel" textAlignment="natural" minimumFontSize="17" translatesAutoresizingMaskIntoConstraints="NO" id="prq-f8-mNP">
+                                <rect key="frame" x="149" y="411" width="218" height="22"/>
+                                <nil key="textColor"/>
+                                <fontDescription key="fontDescription" type="system" pointSize="14"/>
+                                <textInputTraits key="textInputTraits"/>
+                                <connections>
+                                    <action selector="chooseNextDayTextFieldBeginEdit:" destination="mwc-X4-VgC" eventType="editingDidBegin" id="5O9-2P-LWI"/>
+                                </connections>
+                            </textField>
+                            <button opaque="NO" contentMode="scaleToFill" contentHorizontalAlignment="center" contentVerticalAlignment="center" buttonType="roundedRect" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="Owv-me-L37">
+                                <rect key="frame" x="148" y="457" width="79" height="30"/>
+                                <state key="normal" title="update Day"/>
+                                <connections>
+                                    <action selector="updateDayButtonTapped:" destination="mwc-X4-VgC" eventType="touchUpInside" id="arz-KB-0OA"/>
+                                </connections>
+                            </button>
+                            <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" text="Point" textAlignment="natural" lineBreakMode="tailTruncation" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="PNh-XN-MvY">
+                                <rect key="frame" x="168" y="508" width="39" height="21"/>
+                                <fontDescription key="fontDescription" type="system" pointSize="17"/>
+                                <nil key="textColor"/>
+                                <nil key="highlightedColor"/>
+                            </label>
+                        </subviews>
+                        <color key="backgroundColor" white="1" alpha="1" colorSpace="calibratedWhite"/>
+                        <constraints>
+                            <constraint firstItem="FMj-NC-RqU" firstAttribute="baseline" secondItem="slx-fY-dC4" secondAttribute="baseline" id="2Id-bu-KWr"/>
+                            <constraint firstItem="kk3-Ox-cFt" firstAttribute="trailing" secondItem="FMj-NC-RqU" secondAttribute="trailing" constant="8" id="7SN-0i-7tB"/>
+                            <constraint firstItem="2TM-gU-Jef" firstAttribute="baseline" secondItem="OMK-yS-0Mg" secondAttribute="baseline" id="Bxy-7R-JmI"/>
+                            <constraint firstItem="2ga-9a-OIT" firstAttribute="top" secondItem="kk3-Ox-cFt" secondAttribute="top" constant="66" id="D0P-7m-xvR"/>
+                            <constraint firstItem="slx-fY-dC4" firstAttribute="top" secondItem="kk3-Ox-cFt" secondAttribute="top" constant="303" id="FZk-Ua-J2l"/>
+                            <constraint firstItem="Owv-me-L37" firstAttribute="centerX" secondItem="nWA-Hd-PuA" secondAttribute="centerX" id="HOy-8v-i75"/>
+                            <constraint firstItem="Owv-me-L37" firstAttribute="top" secondItem="prq-f8-mNP" secondAttribute="bottom" constant="24" id="Oj3-tN-DcH"/>
+                            <constraint firstItem="1MS-8N-R9f" firstAttribute="leading" secondItem="kk3-Ox-cFt" secondAttribute="leading" constant="8" id="SQk-Fl-TyP"/>
+                            <constraint firstItem="prq-f8-mNP" firstAttribute="leading" secondItem="1MS-8N-R9f" secondAttribute="trailing" constant="8" id="UNP-Qu-vfQ"/>
+                            <constraint firstItem="kk3-Ox-cFt" firstAttribute="trailing" secondItem="2TM-gU-Jef" secondAttribute="trailing" constant="8" id="VRr-Qb-orT"/>
+                            <constraint firstItem="PNh-XN-MvY" firstAttribute="centerX" secondItem="nWA-Hd-PuA" secondAttribute="centerX" id="WEG-Vd-ZCm"/>
+                            <constraint firstItem="1MS-8N-R9f" firstAttribute="top" secondItem="2TM-gU-Jef" secondAttribute="bottom" constant="29" id="Wra-JB-d6F"/>
+                            <constraint firstItem="prq-f8-mNP" firstAttribute="baseline" secondItem="1MS-8N-R9f" secondAttribute="baseline" id="X8Z-57-vzo"/>
+                            <constraint firstItem="slx-fY-dC4" firstAttribute="leading" secondItem="kk3-Ox-cFt" secondAttribute="leading" constant="16" id="arI-kl-Lrb"/>
+                            <constraint firstItem="OMK-yS-0Mg" firstAttribute="leading" secondItem="kk3-Ox-cFt" secondAttribute="leading" constant="8" id="b78-ds-xx9"/>
+                            <constraint firstItem="kk3-Ox-cFt" firstAttribute="bottom" secondItem="nUQ-x2-Ief" secondAttribute="bottom" constant="60" id="fWb-tj-Uw6"/>
+                            <constraint firstItem="Sod-RS-BfH" firstAttribute="centerX" secondItem="nWA-Hd-PuA" secondAttribute="centerX" id="gmW-Tw-H4D"/>
+                            <constraint firstItem="PNh-XN-MvY" firstAttribute="top" secondItem="Owv-me-L37" secondAttribute="bottom" constant="21" id="jX3-dn-LsJ"/>
+                            <constraint firstItem="nUQ-x2-Ief" firstAttribute="centerX" secondItem="nWA-Hd-PuA" secondAttribute="centerX" id="myI-NZ-ama"/>
+                            <constraint firstItem="Sod-RS-BfH" firstAttribute="top" secondItem="2ga-9a-OIT" secondAttribute="bottom" constant="138" id="o8B-gb-HIy"/>
+                            <constraint firstItem="kk3-Ox-cFt" firstAttribute="trailing" secondItem="prq-f8-mNP" secondAttribute="trailing" constant="8" id="pTj-oH-6kS"/>
+                            <constraint firstItem="OMK-yS-0Mg" firstAttribute="top" secondItem="slx-fY-dC4" secondAttribute="bottom" constant="17" id="rk1-jf-ODX"/>
+                            <constraint firstItem="FMj-NC-RqU" firstAttribute="width" secondItem="2TM-gU-Jef" secondAttribute="width" id="tl7-pq-oy2"/>
+                            <constraint firstItem="2ga-9a-OIT" firstAttribute="centerX" secondItem="nWA-Hd-PuA" secondAttribute="centerX" id="w5N-BS-8PC"/>
+                            <constraint firstItem="2TM-gU-Jef" firstAttribute="leading" secondItem="OMK-yS-0Mg" secondAttribute="trailing" constant="27" id="yqF-cf-tkn"/>
+                        </constraints>
+                        <viewLayoutGuide key="safeArea" id="kk3-Ox-cFt"/>
+                    </view>
+                    <connections>
+                        <outlet property="chooseNextDayTextField" destination="prq-f8-mNP" id="Zsy-RV-on3"/>
+                        <outlet property="currentDateTextField" destination="2TM-gU-Jef" id="27F-cr-dmg"/>
+                        <outlet property="lastDateScoreLabel" destination="PNh-XN-MvY" id="DaK-hn-NJC"/>
+                        <outlet property="lastDateTextField" destination="FMj-NC-RqU" id="ue9-rb-87O"/>
+                        <outlet property="pointLabel" destination="Sod-RS-BfH" id="sPf-g0-mch"/>
+                        <outlet property="streakLabel" destination="2ga-9a-OIT" id="qC1-oH-JIc"/>
+                    </connections>
+                </viewController>
+                <placeholder placeholderIdentifier="IBFirstResponder" id="5DM-LY-6jg" userLabel="First Responder" sceneMemberID="firstResponder"/>
+            </objects>
+            <point key="canvasLocation" x="-618" y="166"/>
+        </scene>
+    </scenes>
+</document>
